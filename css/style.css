@@ -106,7 +106,6 @@ p{
  border: none;
  cursor: pointer;
  box-shadow: 0 1x 3px rgba(0,0,0,0.2);
- border-radius: 1rem;
 }
 
 .btn:hover{
@@ -455,10 +454,86 @@ Services
 
 /* 
 ================
-Services
+Contact
 ================
 
 */
 .contact{
-  text-align: left !important;
+  background: var(--clr-grey-10);
 }
+
+.contact-form, .contact-info{
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.contact-item{
+  margin-bottom: 1.75rem;
+}
+
+.contact-title{
+  color: var(--clr-primary);
+ 
+}
+
+.contact-text{
+  text-transform: uppercase;
+}
+
+.contact-form{
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+  max-width: 35rem;
+}
+
+.contact-form:hover{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: var(--transition);
+}
+
+.contact-form h3{
+  padding-top: 1.25rem;
+  color: var(--clr-grey-5);
+}
+
+.form-group{
+  padding: 1rem 1.5rem;
+}
+
+.form-control{
+  display: block;
+  width: 100%;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.25rem;
+  border: none;
+  background: var(--clr-grey-10);
+  border-radius: var(--radius);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing);
+}
+
+.form-control::placeholder{
+  font-family: var(--ff-primary);
+  color: var(--clr-grey-1);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing);
+}
+
+.submit-btn{
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+
+
+/* 
+================
+Footer
+================
+
+*/
