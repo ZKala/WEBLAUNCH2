@@ -205,6 +205,7 @@ Skills
 .skill {
   padding: 2.5rem 0;
   transition: var(--transition);
+  text-align: center;
 }
 
 .skill-icon{
