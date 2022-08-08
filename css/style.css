@@ -12,7 +12,7 @@ Variables
   --clr-grey-5: #617d98;
   --clr-grey-10: #dbe7f1;
   --clr-white: #fff;
-  --ff-primary: "Uchen", "Roboto";
+  --ff-primary: "Helvetica, Arial, sans-serif";
   --ff-secondary: "Arial";
   --transition: all 0.3s linear;
   --letter-spacing: 0.4rem;
@@ -138,7 +138,7 @@ p{
 
 @media screen and (min-width: 992px){
   .section-center{
-    width: 95vw;
+    width: 50%;
     padding: 4rem 1rem;
   }
 }
