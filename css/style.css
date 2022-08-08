@@ -152,6 +152,7 @@ HEADER
  min-height: 100vh;
  background: linear-gradient(rgba(0, 0, 0, 0.236), rgba(0,0,0,0.6)) , url(../images/Specialized-dark.jpg) center/cover no-repeat fixed;
  position: relative;
+ 
  /* animation */
 
 }
@@ -531,6 +532,19 @@ Contact
   border-bottom-right-radius: var(--radius);
 }
 
+@media screen and (min-width: 992px) {
+  .contact-form, .contact-info{
+    float: left;
+    width: 50%;
+
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-form, .contact-info{
+    width: 100%;
+  }
+}
 
 /* 
 ================
@@ -538,3 +552,31 @@ Footer
 ================
 
 */
+
+.footer{
+  background: #222;
+  display: block;
+
+}
+
+.social-icon{
+  color: var(--clr-white);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: var(--transition);
+}
+
+.social-icon:hover{
+  color: var(--clr-primary);
+}
+
+.footer-text{
+  margin-top: 1.25rem;
+  text-transform: uppercase;
+  color: var(--clr-white);
+  font-weight: 400;
+}
+
+.company{
+  /* color: var(--clr-primary); */
+}
