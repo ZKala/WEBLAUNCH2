@@ -12,7 +12,7 @@ Variables
   --clr-grey-5: #617d98;
   --clr-grey-10: #dbe7f1;
   --clr-white: #fff;
-  --ff-primary: "Helvetica, Arial, sans-serif";
+  --ff-primary: "Uchen", "Roboto";
   --ff-secondary: "Arial";
   --transition: all 0.3s linear;
   --letter-spacing: 0.4rem;
@@ -138,7 +138,7 @@ p{
 
 @media screen and (min-width: 992px){
   .section-center{
-    width: 50%;
+    width: 95vw;
     padding: 4rem 1rem;
   }
 }
@@ -241,6 +241,8 @@ HEADER
  top: 50%;
  left: 50%;
  transform: translate(-50%,-50%);
+ letter-spacing: var(--letter-spacing);
+ 
 }
 
 .banner h2{
@@ -259,10 +261,9 @@ HEADER
 }
 
 .banner-btn{
- outline: 0.15rem solid var(--clr-grey-1);
+ /* outline: 0.15rem solid var(--clr-grey-1);
  outline-offset: 0.15rem;
- font-size: 1.25rem;
- padding: 0.5rem 1.5rem;
+ font-size: 1.25rem; */
 }
 
 .content-divider{
