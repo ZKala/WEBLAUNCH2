@@ -33,6 +33,7 @@ body{
  position: relative;
  transition: flex 0.7s ease-in;
 
+
 }
 
 .panel h3{
@@ -46,6 +47,7 @@ body{
 .panel.active{
  flex: 5;
  color: aqua;
+ overflow: hidden;
 }
 
 .panel.active h3{
@@ -53,6 +55,7 @@ body{
  transition: opacity 0.3s ease-in 0.4s;
 }
 
+/* removes 4th and 5th for small screens*/
 @media (max-width: 480px) {
  .container{
   width: 100vw;
@@ -62,4 +65,23 @@ body{
  .panel:nth-of-type(4) {
   display: none;
  }
+}
+
+/* go back to main */
+.goback{
+ background: rgba(128, 128, 128, 0.466);
+ text-decoration: none;
+ border-radius: 1rem;
+ display: block;
+ position: absolute;
+}
+
+.gobacktext{
+ display: inline-block;
+ text-align: center;
+}
+
+.gobacktext a{
+ text-decoration: none;
+ color:white
 }
