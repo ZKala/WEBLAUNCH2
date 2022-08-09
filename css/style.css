@@ -144,6 +144,59 @@ p{
 }
 /* 
 ========
+Animation
+========
+ */
+@keyframes animate {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes slideFromRight {
+  0%{
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  50%{
+    transform: translateX(-150px);
+    opacity: 0.5;
+  }
+  75%{
+    transform: translateX(75px);
+    opacity: 0.75;
+  }
+  
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  75%{
+    opacity: 0.75;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+ /* 
+========
 Navbar
 ========
  */
@@ -156,6 +209,7 @@ Navbar
   z-index: 1;
   cursor: pointer;
   /* animation */
+  animation: animate 5s ease-in infinite;
 }
 /* navbar */
 .navbar{
@@ -249,6 +303,7 @@ HEADER
  font-family: var(--ff-primary);
  color: var(--clr-primary);
 /* animation */
+animation: slideFromRight 3s ease-in-out 1;
 }
 
 
@@ -258,12 +313,15 @@ HEADER
  margin-top: 1.25rem;
  margin-bottom: 2rem;
  /* animation */
+ animation: fadeIn 2.5s ease 1;
 }
 
 .banner-btn{
  outline: 0.15rem solid var(--clr-grey-1);
  outline-offset: 0.15rem;
  font-size: 1.25rem;
+ /* animation */
+ animation: animate 5s ease-in infinite;
 }
 
 .content-divider{
