@@ -286,6 +286,7 @@ HEADER
  position: relative;
  
  /* animation */
+ overflow-x: hidden;
 
 }
 
@@ -685,6 +686,7 @@ Footer
 .footer{
   background: #222;
   display: block;
+  text-decoration: none;
 
 }
 
@@ -703,7 +705,7 @@ Footer
   margin-top: 1.25rem;
   text-transform: uppercase;
   color: var(--clr-white);
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .company{

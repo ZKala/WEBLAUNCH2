@@ -2,9 +2,9 @@
 :root{
  --clr-primary: #ffbe0b;
  --clr-secondary: #fb5607;
- --clr-third: #ff006e;
- --clr-fourth: #8338ec;
- --clr-fifth: #3a86ff;
+ --clr-grey01: rgb(82, 82, 82);
+ --clr-grey05: rgb(164, 164, 164);
+ --clr-grey10: rgb(211, 211, 211);
  --clr-white: #fff;
  --ff-primary: "Arial";
  --ff-secondary: "Roboto";
@@ -75,20 +75,18 @@
 .header{
  min-height: calc(100vh - 3rem);
  background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(157, 78, 5, 0.1)), url(..);
- min-height: 100vh;
+ min-height: calc(100vh-3rem);
  position:relative;
 }
 
 .banner{
  position: absolute;
- min-height: 100vh;
+ min-height: 50vh;
  top:50%;
  left:50%;
  transform: translate(-50%,-30%);
  text-align: center;
  text-transform: capitalize;
- /* border: 2px solid aqua; */
-
 }
 
 .banner h2{
@@ -101,7 +99,7 @@
 .banner h1{
  font-family: var(--ff-secondary);
  color: var(--clr-secondary);
- margin-bottom: 2rem;
+ margin-bottom: 3rem;
 }
 
 .banner-btn{
@@ -131,10 +129,7 @@
 
 
 /* ==========TEST */
-.test{
- background: url(../images/logo.jpg) center/cover no-repeat fixed;
- min-height: 100vh;
-}
+
 
 
 .hover-underline-animation:after {
@@ -160,3 +155,29 @@
 
 
 /* Contact Me/Discuss your project */
+
+/* FOOTER AND SOCIALS */
+.footer{
+  background: #222;
+  display: block;
+  text-align: center;
+}
+
+.social-icon{
+  color: var(--clr-white);
+  font-size: 1rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  padding: 2rem;
+}
+
+.social-icon:hover{
+  color: var(--clr-primary);
+}
+
+.footer-text{
+  margin-top: 1rem;
+  text-transform: uppercase;
+  color: var(--clr-white);
+  font-weight: 400;
+}
