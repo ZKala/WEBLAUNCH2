@@ -330,6 +330,11 @@ animation: slideFromRight 3s ease-in-out 1;
   background: linear-gradient(to left, var(--clr-primary), #49e4e9, var(--clr-primary));
 }
 
+.about-header{
+  color: var(--clr-primary);
+  text-transform: uppercase;
+}
+
 /* 
 ========
 Skills

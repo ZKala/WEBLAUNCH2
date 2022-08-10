@@ -147,7 +147,8 @@
   font-size: 1rem;
   margin-right: 1rem;
   text-decoration: none;
-  padding: 0.6rem;
+  padding: 1rem 1rem;
+
 }
 
 .social-icon:hover{
@@ -159,4 +160,11 @@
   text-transform: uppercase;
   color: var(--clr-white);
   font-weight: 400;
+}
+
+
+/* divider */
+.content-divider{
+  height: 0.5rem;
+  background: linear-gradient(to left, var(--clr-primary), #49e4e9, var(--clr-secondary));
 }
