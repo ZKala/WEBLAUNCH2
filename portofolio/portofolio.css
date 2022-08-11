@@ -205,7 +205,7 @@ html{
 }
 
 .service i{
- font-size: 10rem;
+ font-size: 7rem;
  color: #888;
  margin-bottom: 2rem;
  text-shadow: 0.1rem 0.1rem 0.5rem #555;
@@ -222,8 +222,10 @@ html{
 }
 
 
-
-
-
-
 /* end of section 2 */
+
+/* start of section 3 */
+.project-image{
+ height: 100vh;
+}
+/* end of section 3 */
