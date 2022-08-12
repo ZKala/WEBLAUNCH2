@@ -23,9 +23,21 @@ html{
 }
 
 :root{
- --transition: all 0.1s linear;
+ --primary-color: #e41c6f;
  --secondary-color: #333;
+ --secondary-background: #eef;
+ --color-white: #fff;
+ --transition: all 0.1s linear;
 
+}
+.section-heading{
+ font-size: 5rem;
+ color: #333;
+ text-transform: uppercase;
+ letter-spacing: 0.5rem;
+ margin-bottom: 15rem;
+ border-bottom: .3rem solid var(--secondary-color);
+ text-shadow: 0.2rem 0.2rem 0.5rem #555;
 }
 /* end of reset and common styles */
 
@@ -98,6 +110,7 @@ html{
  box-shadow: .2rem .2rem .5rem #555;
  position: sticky;
  top: 0;
+ z-index: 1;
  }
 
 .navbar-link{
@@ -142,15 +155,6 @@ html{
  align-items: center;
 }
 
-.section-2-heading{
- font-size: 5rem;
- color: #333;
- text-transform: uppercase;
- letter-spacing: 0.5rem;
- margin-bottom: 15rem;
- border-bottom: .3rem solid var(--secondary-color);
- text-shadow: 0.2rem 0.2rem 0.5rem #555;
-}
 
 .progress-bars-wrapper{
  margin-bottom: 10rem;
@@ -164,6 +168,7 @@ html{
  border-radius: 0.3rem;
  box-shadow: 0.2rem 0.2rem 1rem #555;
  position: relative;
+
 }
 
 .progress-text{
@@ -173,6 +178,7 @@ html{
  color: #fff;
 }
 
+
 .progress-text span{
  margin: 0.5rem;
  font-size: 1.8rem;
@@ -180,7 +186,7 @@ html{
 }
 
 .progress-percent{
- width: 90%;
+ width: 80%;
  height: 100%;
  background-color: #e41c6f;
  border-radius: .5rem;
@@ -225,7 +231,85 @@ html{
 /* end of section 2 */
 
 /* start of section 3 */
+.section-3{
+ width: 100%;
+ height: 100%;
+ padding: 10rem 0;
+ background-color: var(--secondary-background);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.project-wrapper{
+ width: 80%;
+ flex-wrap: wrap;
+}
+
+.project{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 5rem;
+ background-color: white;
+ box-shadow: .3rem .3rem .5rem #777;
+ position: relative;
+ overflow: hidden;
+}
+
+.project-text{
+ text-align: center;
+ letter-spacing: 0.1rem;
+ position: absolute;
+ top: -11rem;
+ transition: top 0.3s;
+ z-index: 10;
+}
+
+.project:hover .project-text{
+ top: 5rem;
+ transition: top .3s .3s;
+}
+
+.project-name{
+ font-size: 3rem;
+ font-weight: 700;
+ text-transform: capitalize;
+}
+
+.project-technologies{
+ font-size: 1.8rem;
+ color: var(--primary-color);
+}
+
+/* project images */
 .project-image{
- height: 100vh;
+ width: 30rem;
+ height: 20rem;
+ transition: opacity 0.3;
+ object-fit: cover;
+}
+
+.project:hover .project-image{
+ opacity: 0.2;
+}
+
+.project-link{
+ font-size: 2rem;
+ font-weight: 500;
+ color: var(--secondary-color);
+ letter-spacing: 0.1rem;
+ border: 2px solid var(--primary-color);
+ padding: 0 1rem;
+ background: var(--color-white);
+ position: absolute;
+ bottom: -5rem;
+ transition: bottom 0.3s;
+}
+
+.project:hover .project-link{
+ bottom: 5rem;
+ transition: bottom .3s .3s;
 }
 /* end of section 3 */
