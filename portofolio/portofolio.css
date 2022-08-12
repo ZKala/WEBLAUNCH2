@@ -45,7 +45,7 @@ html{
 .section-1{
  width: 100%;
  height: 100vh;
- background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3)),url(./Imageporto/section1background.jpg) center no-repeat fixed;
+ background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3)),url(/portofolio/Imageporto/section1background.jpg) center no-repeat fixed;
  background-size: cover;
  flex-direction: column;
 }
