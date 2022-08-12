@@ -36,7 +36,7 @@ html{
  text-transform: uppercase;
  letter-spacing: 0.5rem;
  margin-bottom: 15rem;
- border-bottom: .3rem solid var(--secondary-color);
+ border-bottom: .3rem solid var(--primary-color);
  text-shadow: 0.2rem 0.2rem 0.5rem #555;
 }
 /* end of reset and common styles */
@@ -45,7 +45,7 @@ html{
 .section-1{
  width: 100%;
  height: 100vh;
- background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3)),url(/portofolio/Imageporto/section1background.jpg) center no-repeat fixed;
+ background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3)),url(../portofolio/Imageporto/section1background2.jpg) center no-repeat fixed;
  background-size: cover;
  flex-direction: column;
 }
@@ -152,7 +152,7 @@ html{
  width: 100%;
  height: 100vh;
  padding: 10rem 0 10rem 0;
- background-color: #fff;
+ background-color: var(--secondary-color);
  display: flex;
  flex-direction: column;
  align-items: center;
