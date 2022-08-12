@@ -38,6 +38,7 @@ html{
  margin-bottom: 15rem;
  border-bottom: .3rem solid var(--primary-color);
  text-shadow: 0.2rem 0.2rem 0.5rem #555;
+ text-align: center;
 }
 /* end of reset and common styles */
 
@@ -110,7 +111,7 @@ html{
  box-shadow: .2rem .2rem .5rem #555;
  position: sticky;
  top: 0;
- z-index: 1;
+ z-index: 2;
  }
 
 
@@ -151,8 +152,8 @@ html{
 .section-2{
  width: 100%;
  height: 100vh;
- padding: 10rem 0 10rem 0;
- background-color: var(--secondary-color);
+ padding: 8rem 0 10rem 0;
+ background-color: var(--color-white);
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -221,27 +222,21 @@ html{
 }
 
 
-
 .services{
  width: 100%;
- height: 100vh;
+ height: 30vh;
  display: flex;
  justify-content: space-evenly;
  align-items: center;
 }
 
-.services{
+.service{
  text-align: center;
- text-transform: uppercase;
-}
-
-.service:first-child,
-.service:last-child{
- align-self: flex-start;
+ text-transform: capitalize;
 }
 
 .service i{
- font-size: 4rem;
+ font-size: 5rem;
  color: #888;
  margin-bottom: 5rem;
  text-shadow: 0.1rem 0.1rem 0.5rem #555;
@@ -300,7 +295,7 @@ html{
  position: absolute;
  top: -11rem;
  transition: top 0.3s;
- z-index: 10;
+ z-index: 1;
 }
 
 .project:hover .project-text{
@@ -354,25 +349,18 @@ html{
 .section-4{
  width: 100%;
  height: 70vh;
- background: var(--secondary-color);
+ background: var(--color-white);
  display: flex;
  flex-direction: column;
  align-items: center;
  justify-content: space-evenly;
 }
 
-.section-heading{
- color: var(--color-white);
- box-shadow: none;
- border-color: var(--color-whites);
- text-align: center;
-}
-
 .section-4-heading{
- color: var(--color-white);
+ color: var(--secondary-background);
  box-shadow: none;
- border-color: var(--color-white);
- margin-bottom: 5rem;
+ border-color: var(--secondary-color);
+ margin-bottom: 3rem;
 }
 .contact-form{
  width: 50rem;
@@ -408,8 +396,8 @@ html{
 /* section 5(footer) */
 .section-5{
  width: 100%;
- height: 30vh;
- background-color: #222;
+ height: 20vh;
+ background-color: var(--secondary-color);
  flex-direction: column;
 }
 
