@@ -1,0 +1,70 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+ font-family: 'Times New Roman', Times, serif;
+ display: flex;
+ flex-wrap: wrap;
+ margin: 0;
+ padding-top: 3rem;
+ background: var(--light-blue);
+}
+
+:root{
+ --light-green: rgb(56, 189, 96);
+ --lighter-green: #9ec862;
+ --light-blue: #7bdaf3;
+ --white: #fff;
+}
+
+.add{
+ position: fixed;
+ top: 1rem;
+ right: 1rem;
+ background-color: var(--light-green);
+ border: none;
+ border-radius: 1rem;
+ padding: 0.5rem 1rem;
+ color: #fff;
+ cursor: pointer;
+}
+
+.note{
+ background-color: var(--white);
+ box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, 0.2);
+ margin: 1rem 1rem;
+ height: 400px;
+ width: 400px;
+}
+
+.tools{
+ background-color: var(--lighter-green);
+ display: flex;
+ justify-content: flex-end;
+ padding: 0.5rem;
+}
+
+.tools button{
+ background-color: transparent;
+ border: none;
+ cursor: pointer;
+ font-size: 1rem;
+ padding-left: 1rem;
+}
+
+.note textarea{
+ outline: none;
+ font-family: inherit;
+ font-size: 1.2rem;
+ border: none;
+ height: 400px;
+ width: 100%;
+ padding: 20px;
+}
+
+.hidden{
+ display: none;
+}
