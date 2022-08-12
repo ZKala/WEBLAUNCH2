@@ -195,6 +195,30 @@ html{
  background-color: #e41c6f;
  border-radius: .5rem;
 }
+.progress-percent-css{
+ width: 50%;
+ height: 100%;
+ background-color: #e41c6f;
+ border-radius: .5rem;
+}
+.progress-percent-js{
+ width: 15%;
+ height: 100%;
+ background-color: #e41c6f;
+ border-radius: .5rem;
+}
+.progress-percent-reactjs{
+ width: 0%;
+ height: 100%;
+ background-color: #e41c6f;
+ border-radius: .5rem;
+}
+.progress-percent-nodejs{
+ width: 0%;
+ height: 100%;
+ background-color: #e41c6f;
+ border-radius: .5rem;
+}
 
 
 
