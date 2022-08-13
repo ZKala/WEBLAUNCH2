@@ -65,6 +65,10 @@ body{
  padding: 20px;
 }
 
+.main{
+ padding: 2rem;
+}
+
 .hidden{
  display: none;
 }
