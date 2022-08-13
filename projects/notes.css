@@ -20,6 +20,17 @@ body{
  --white: #fff;
 }
 
+.inquiry{
+ text-align: center;
+ min-height: 10vh;
+ width: 100%; 
+ margin: 1 2rem;
+}
+
+.inquiry span{
+ color: red;
+ font-weight: 700;
+}
 .add{
  position: fixed;
  top: 1rem;
