@@ -1,4 +1,4 @@
-
+window.alert("Please read the warning")
 
 const addBtn = document.getElementById('add');
 
