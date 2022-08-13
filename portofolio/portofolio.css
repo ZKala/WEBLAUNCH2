@@ -273,7 +273,7 @@ html{
 
 .project{
  display: flex;
- flex-direction: column;
+ flex-wrap: wrap;
  justify-content: center;
  align-items: center;
  margin-bottom: 5rem;
@@ -352,8 +352,8 @@ html{
  background: var(--color-white);
  display: flex;
  flex-direction: column;
- align-items: center;
  justify-content: space-evenly;
+ align-items: center;
 }
 
 .section-4-heading{
@@ -362,6 +362,9 @@ html{
  border-color: var(--secondary-color);
  margin-bottom: 3rem;
 }
+
+/* contact form */
+
 .contact-form{
  width: 50rem;
  flex-direction: column;
@@ -479,6 +482,9 @@ html{
  .copyright{
   width: 70%;
  }
+ .project-technologies{
+  margin-bottom: 1rem;
+}
 }
 
 @media(max-width:500px){ 
