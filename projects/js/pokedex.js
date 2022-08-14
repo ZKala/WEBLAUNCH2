@@ -1,7 +1,8 @@
 const poke_container = document.getElementById('poke-container');
 
-const pokemon_count = 10;
+const pokemon_count = 60;
 
+// pokemon types colors
 const colors = {
  fire: '#FDDFDF',
  grass: '#DEFDE0',
@@ -18,6 +19,10 @@ const colors = {
  fighting: '#E6E0D4',
  normal: '#F5F5F5'
 }
+
+const main_types = Object.keys(colors)
+
+// pokemon types colors
 
 const fetchPokemons = async () => {
  for(let i = 001; i <= pokemon_count; i++) {
@@ -40,24 +45,28 @@ const createCard = (pokemon) => {
 // pokecounter
 
 var increment = ("000" + pokemon.id).slice(-3);
-
+var id = pokemon.id.toString().padStart(3, '0');
+console.log(id)
 // pokecounter
 
 // pokemon name
-const pokename = pokemon.name[0].toUpperCase()+pokemon.name.slice(1);
+const pokename = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
 
 // pokemon name
 
 const poke_types = pokemon.types.map(type => type.type.name);
+const type = main_types.find(type => poke_types.indexOf(type > -1));
 
-console.log(poke_types)
+const color = colors[type];
+
+pokemonEl.style.backgroundColor = color;
 
 const pokemonInnerHtml = `
  <div class="img-container">
       <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/${increment}.png" alt="">
   </div>
   <div class="info">
-     <span class="number">#${increment}</span>
+     <span class="number">#${id}</span>
      <h3 class="name">${pokename}</h3>
      <small class="type">Type: <span>${poke_types}</span></small>
   </div>
