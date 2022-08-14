@@ -1,6 +1,6 @@
 const poke_container = document.getElementById('poke-container');
 
-const pokemon_count = 10;
+const pokemon_count = 500;
 
 // pokemon types colors
 const colors = {

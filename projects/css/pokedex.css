@@ -1,3 +1,14 @@
+@font-face {
+ font-family: "pokeFont";
+ src: url(PokeHollow.ttf);
+}
+
+@font-face {
+ font-family: "pokeFont2";
+ src: url(PokeSolid.ttf);
+}
+
+
 *{
  margin: 0;
  padding: 0;
@@ -6,8 +17,8 @@
 
 :root{
  --pokebackground: #efefbb;
- --pokebackground-gradient: linear-gradient(to right, #d4d3dd, #efefbb);
- --letter-spacing: 0.2rem;
+ --pokebackground-gradient: linear-gradient(to right, #d4d3dd, #c3c385);
+ --letter-spacing: 0.3rem;
 }
 
 
@@ -25,7 +36,38 @@ body{
 
 h1{
  letter-spacing: var(--letter-spacing);
+ font-family: "pokeFont";
+ margin: 3rem 0;
+ color: yellow;
+ background-color: black;
+ opacity: 0.5;
+ border-radius: 4rem;
+ padding: 3rem 3rem;
+
 }
+
+h1:hover{
+ font-family: "pokeFont2";
+}
+
+/* Back to home */
+.me{
+ background: rgba(0, 0, 0, 0.1);
+ text-align: center;
+ padding: 1rem 1rem;
+
+}
+
+.me a{
+ text-decoration: none;
+ background: violet;
+ text-transform: uppercase;
+ letter-spacing: var(--pokebackground);
+ padding: 0.5rem 0.5rem;
+ font-weight: 700;
+ color: rgb(255, 255, 0);
+}
+/* End of back to home */
 
 .poke-container{
  display: flex;
@@ -38,7 +80,7 @@ h1{
 
 .pokemon{
  background-color: #eee;
- border-radius: 0.3rem;
+ border-radius: 0.5rem;
  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
  margin: 1rem;
  padding: 0.5rem;
@@ -70,11 +112,24 @@ h1{
  color: white;
  padding: 0.2rem 0.5rem;
  border-radius: 10px;
- font-size: 0.8em;
+ font-size: 0.9em;
 }
 
 /* cuustomizes pokemon name */
 .pokemon .info .name{
- margin: 1rem 0.2rem 7px;
- letter-spacing: 1px;
+ margin: 0.5rem 0rem 7px;
+ letter-spacing: var(--letter-spacing);
+ font-family: "pokeFont";
+ color: yellow;
+ background: rgba(0, 0, 0, 0.5);
+ padding: 0.2rem 0.1rem;
+ border-radius: 1rem;
+ border: 2px solid yellow;
+}
+
+/* pokemon type */
+.type{
+ text-transform: capitalize;
+ text-decoration: underline;
+ font-weight: 700;
 }
