@@ -1,6 +1,6 @@
 const poke_container = document.getElementById('poke-container');
 
-const pokemon_count = 60;
+const pokemon_count = 200;
 
 // pokemon types colors
 const colors = {
@@ -63,7 +63,7 @@ pokemonEl.style.backgroundColor = color;
 
 const pokemonInnerHtml = `
  <div class="img-container">
-      <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/${increment}.png" alt="">
+      <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/${id}.png" alt="">
   </div>
   <div class="info">
      <span class="number">#${id}</span>
