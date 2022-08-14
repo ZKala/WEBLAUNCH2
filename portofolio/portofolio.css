@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "pokeFont";
-  src: url(/projects/pokedex/pokefonts/PokeHollow.ttf);
+  src: url(../projects/pokedex/pokefonts/PokeHollow.ttf);
 }
 
 /* reset and common styles */
@@ -296,16 +296,19 @@ html{
 }
 
 .project-text{
- text-align: center;
- letter-spacing: 0.1rem;
- position: absolute;
- top: -11rem;
- transition: top 0.3s;
- z-index: 1;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  position: absolute;
+  top: -11rem;
+  transition: top 0.3s;
+  z-index: 1;
+  background: rgb(68, 68, 68, 0.1);
+  border-radius: 1rem;
+  padding: 0 0.5rem;
 }
 
 .project:hover .project-text{
- top: 5rem;
+ top: 3rem;
  transition: top .3s .3s;
 }
 
@@ -343,6 +346,7 @@ html{
  position: absolute;
  bottom: -5rem;
  transition: bottom 0.3s;
+ z-index: 11;
 }
 
 .project:hover .project-link{
@@ -352,6 +356,9 @@ html{
 
 #pokedex{
   font-family: "pokeFont";
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+  color:darkgoldenrod;
 }
 /* end of section 3 */
 
