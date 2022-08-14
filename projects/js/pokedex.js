@@ -1,6 +1,6 @@
 const poke_container = document.getElementById('poke-container');
 
-const pokemon_count = 200;
+const pokemon_count = 10;
 
 // pokemon types colors
 const colors = {
@@ -44,7 +44,7 @@ const createCard = (pokemon) => {
 
 // pokecounter
 
-var increment = ("000" + pokemon.id).slice(-3);
+// var increment = ("000" + pokemon.id).slice(-3); is this to change the number
 var id = pokemon.id.toString().padStart(3, '0');
 console.log(id)
 // pokecounter
@@ -55,9 +55,12 @@ const pokename = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
 // pokemon name
 
 const poke_types = pokemon.types.map(type => type.type.name);
-const type = main_types.find(type => poke_types.indexOf(type > -1));
+const type = main_types.find(type => poke_types.indexOf(type) > -1);
 
 const color = colors[type];
+
+console.log(type)
+// console.log(color)
 
 pokemonEl.style.backgroundColor = color;
 
