@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+@font-face {
+  font-family: "pokeFont";
+  src: url(/projects/pokedex/pokefonts/PokeHollow.ttf);
+}
+
 /* reset and common styles */
 *{
  margin: 0;
@@ -273,7 +278,7 @@ html{
 
 .project{
  display: flex;
- /* flex-wrap: wrap; */
+ flex-wrap: wrap;
  justify-content: center;
  align-items: center;
  margin-bottom: 5rem;
@@ -283,6 +288,7 @@ html{
  overflow: hidden;
  border-radius: 1rem;
  transition: box-shadow 0.5s;
+ width: 50vh;
 }
 
 .project:hover{
@@ -342,6 +348,10 @@ html{
 .project:hover .project-link{
  bottom: 5rem;
  transition: bottom .3s .3s;
+}
+
+#pokedex{
+  font-family: "pokeFont";
 }
 /* end of section 3 */
 
@@ -447,7 +457,7 @@ html{
 }
 
 @media(max-width:800px){
- section-1-heading{
+.section-1-heading{
   font-size: 4rem;
  }
  .progress-bar{
@@ -491,7 +501,9 @@ html{
  html{
   font-size: 55%;
   }
- 
+ .project{
+  width: 50vh;
+ }
 }
 
 @media(max-width: 450px) {
@@ -509,6 +521,8 @@ html{
   text-align: center;
   width: 40rem;
  }
+ .project{
+  width: 40vh;
 }
-
+}
 /* end of responsive display */
