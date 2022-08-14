@@ -37,7 +37,7 @@ body{
 h1{
  letter-spacing: var(--letter-spacing);
  font-family: "pokeFont";
- margin: 3rem 0;
+ margin: 3rem auto;
  color: yellow;
  background-color: black;
  opacity: 0.5;
