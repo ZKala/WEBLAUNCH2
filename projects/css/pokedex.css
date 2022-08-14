@@ -48,6 +48,7 @@ h1{
 
 h1:hover{
  font-family: "pokeFont2";
+ text-transform: uppercase;
 }
 
 /* Back to home */
@@ -67,7 +68,16 @@ h1:hover{
  font-weight: 700;
  color: rgb(255, 255, 0);
 }
+
+.me:hover{
+ transform: scale(1.1);
+}
+
+.home:hover{
+ transform: scale(1.1);
+}
 /* End of back to home */
+
 
 .poke-container{
  display: flex;
