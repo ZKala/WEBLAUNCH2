@@ -1,0 +1,78 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+:root{
+ --pokebackground: #efefbb;
+ --pokebackground-gradient: linear-gradient(to right, #d4d3dd, #efefbb);
+ --letter-spacing: 0.2rem;
+}
+
+
+body{
+ background: var(--pokebackground);
+ background: var(--pokebackground-gradient);
+ font-family: 'Times New Roman', Times, serif;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+}
+
+
+h1{
+ letter-spacing: var(--letter-spacing);
+}
+
+.poke-container{
+ display: flex;
+ flex-wrap: wrap;
+ align-items: space-between;
+ justify-content: center;
+ margin: 0 auto;
+ max-width: 1200px;
+}
+
+.pokemon{
+ background-color: #eee;
+ border-radius: 0.3rem;
+ box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+ margin: 1rem;
+ padding: 0.5rem;
+ text-align: center;
+}
+
+.pokemon .img-container{
+ background-color: rgba(255,255,255,0.5);
+ border-radius: 50%;
+ width: 10rem;
+ height: 7rem;
+ text-align: center;
+
+}
+
+.pokemon .img-container img{
+ max-width: 90%;
+ margin-top: 0.2rem;
+ border-radius: 1rem;
+}
+
+.pokemon .info{
+ margin-top: 0.3rem;
+}
+
+.pokemon .info .number{
+ background-color: rgba(0,0,0,0.1);
+ padding: 0.2rem 0.5rem;
+ border-radius: 10px;
+ font-size: 0.8em;
+}
+
+/* cuustomizes pokemon name */
+.pokemon .info .name{
+ margin: 1rem 0.2rem 7px;
+ letter-spacing: 1px;
+}

@@ -268,12 +268,12 @@ html{
 
 .project-wrapper{
  width: 80%;
- flex-wrap: wrap;
+ /* flex-wrap: wrap; */
 }
 
 .project{
  display: flex;
- flex-wrap: wrap;
+ /* flex-wrap: wrap; */
  justify-content: center;
  align-items: center;
  margin-bottom: 5rem;
