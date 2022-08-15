@@ -269,18 +269,22 @@ html{
  display: flex;
  flex-direction: column;
  align-items: center;
+
 }
 
-.project-wrapper{
- width: 80%;
- /* flex-wrap: wrap; */
+.projects-wrapper{ 
+ display: flex;
+ width: 100%;
+ flex-wrap: wrap;
+ max-width: 80%;
+ justify-content: space-between;
 }
 
 .project{
- display: flex;
- flex-wrap: wrap;
+ max-width: 50vh;
+ display: flex; 
  justify-content: center;
- align-items: center;
+ align-items: center; 
  margin-bottom: 5rem;
  background-color: white;
  box-shadow: .3rem .3rem .5rem #777;
@@ -288,7 +292,7 @@ html{
  overflow: hidden;
  border-radius: 1rem;
  transition: box-shadow 0.5s;
- width: 50vh;
+ box-sizing: border-box;
 }
 
 .project:hover{
@@ -461,6 +465,9 @@ html{
  .section-4{
   height: 80vh;
  }
+ .project{
+  width: 50vh;
+ }
 }
 
 @media(max-width:800px){
@@ -499,9 +506,7 @@ html{
  .copyright{
   width: 70%;
  }
- .project-technologies{
-  margin-bottom: 1rem;
-}
+ 
 }
 
 @media(max-width:500px){ 
