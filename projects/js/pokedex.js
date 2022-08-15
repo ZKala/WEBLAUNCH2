@@ -25,7 +25,7 @@ const main_types = Object.keys(colors)
 // pokemon types colors
 
 const fetchPokemons = async () => {
- for(let i = 001; i <= pokemon_count; i++) {
+ for(let i = 1; i <= pokemon_count; i++) {
   await getPokemon(i)
  }
 }
