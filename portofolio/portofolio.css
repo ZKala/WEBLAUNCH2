@@ -277,7 +277,9 @@ html{
  width: 100%;
  flex-wrap: wrap;
  max-width: 80%;
- justify-content: space-between;
+ justify-content: space-evenly;
+ justify-content: center;
+
 }
 
 .project{
@@ -285,7 +287,7 @@ html{
  display: flex; 
  justify-content: center;
  align-items: center; 
- margin-bottom: 5rem;
+ margin: 5rem 5rem;
  background-color: white;
  box-shadow: .3rem .3rem .5rem #777;
  position: relative;
@@ -513,9 +515,6 @@ html{
  html{
   font-size: 55%;
   }
- .project{
-  width: 50vh;
- }
 }
 
 @media(max-width: 450px) {
@@ -534,7 +533,7 @@ html{
   width: 40rem;
  }
  .project{
-  width: 40vh;
+  width: 50vh;
 }
 }
 /* end of responsive display */
