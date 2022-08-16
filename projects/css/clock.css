@@ -115,13 +115,13 @@ body{
 }
 
 .time{
- font-size: 5rem;
+ font-size: 3rem;
 }
 
 .date{
  color: #aaa;
- font-size: 3rem;
- letter-spacing: 1rem;
+ font-size: 1rem;
+ letter-spacing: 0.5rem;
  text-transform: uppercase;
  display: flex;
  justify-content: center;
@@ -132,12 +132,13 @@ body{
  background-color: var(--primarycolor);
  color: var(--secondarycolor);
  border-radius: 10%;
- height: 4rem;
- width: 4rem;
+ height: 3rem;
+ width: 3rem;
+ margin-left: 0;
  text-align: center;
  display: inline-flex;
  align-items: center;
  justify-content: center;
  transition: var(--transition);
- font-size: 3rem;
+ font-size: 1rem;
 }
