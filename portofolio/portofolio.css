@@ -339,6 +339,7 @@ html{
  color: var(--primary-color);
 }
 
+
 /* project images */
 .project-image{
  width: 100%;
@@ -372,9 +373,12 @@ html{
 
 #pokedex{
   font-family: "pokeFont";
-  padding: 0 0.5rem;
-  border-radius: 1rem;
-  color:darkgoldenrod;
+  color: rgb(138, 118, 3);
+  top: 0;
+}
+
+#pokedex-btn{
+  transform: translateY(3rem);
 }
 /* end of section 3 */
 

@@ -134,9 +134,8 @@ body{
  background-color: var(--primarycolor);
  color: var(--secondarycolor);
  border-radius: 10%;
- height: 3rem;
- width: 3rem;
- margin-left: 0;
+ height: 2rem;
+ width: 2.5rem;
  text-align: center;
  display: inline-flex;
  align-items: center;
