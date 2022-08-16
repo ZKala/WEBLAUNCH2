@@ -1,4 +1,3 @@
-window.alert("Please read the warning")
 
 const addBtn = document.getElementById('add');
 
@@ -33,7 +32,11 @@ textArea.value = text;
 main.innerHTML = marked.parse(text)
 
 deleteBtn.addEventListener('click', () => {
+  if(confirm('Are you sure you want to delete this note?')) {
   note.remove()
+  } else {
+    false
+  }
 
   updateLS()
 });
