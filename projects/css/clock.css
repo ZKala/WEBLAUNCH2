@@ -62,7 +62,8 @@ body{
  width: 200px;
  height: 200px;
  background: var(--background);
- border: 2px solid red;
+ border: 2px solid var(--primarycolor);
+ border-radius: 50%;
 }
 
 .needle{
