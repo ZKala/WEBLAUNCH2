@@ -38,7 +38,7 @@ body{
 .add{
  position: fixed;
  top: 1rem;
- right: 1rem;
+ left: 1rem;
  background-color: var(--light-green);
  border: none;
  border-radius: 1rem;
