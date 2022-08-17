@@ -224,13 +224,13 @@ html{
  border-radius: .5rem;
 }
 .progress-percent-reactjs{
- width: 0%;
+ width: 15%;
  height: 100%;
  background-color: #e41c6f;
  border-radius: .5rem;
 }
 .progress-percent-nodejs{
- width: 0%;
+ width: 15%;
  height: 100%;
  background-color: #e41c6f;
  border-radius: .5rem;
