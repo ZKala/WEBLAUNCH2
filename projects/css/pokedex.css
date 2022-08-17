@@ -72,6 +72,7 @@ h1:hover{
 
 .me:hover{
  transform: scale(1.1);
+ transition: all 0.5s ease-in-out;
 }
 
 .home:hover{
@@ -143,4 +144,18 @@ h1:hover{
  text-transform: capitalize;
  text-decoration: underline;
  font-weight: 700;
+}
+
+#addpokemon{
+ margin:1rem;
+ padding: 0 0.2rem;
+ color: yellow;
+ background: rgba(0, 0, 0, 0.5);
+ font-family: "pokeFont";
+ border-radius: 1rem;
+ cursor: pointer;
+}
+
+#countpokemon{
+ cursor: pointer;
 }

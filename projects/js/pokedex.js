@@ -1,4 +1,11 @@
 
+const addpokemon =  document.getElementById('addpokemon')
+
+
+addpokemon.addEventListener('click', () => fetchPokemons())
+
+
+
 // test code
 
 const poke_container = document.getElementById('poke-container');
@@ -71,7 +78,7 @@ pokemonEl.style.backgroundColor = color;
 
 const pokemonInnerHtml = `
  <div class="img-container">
-      <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/${id}.png" alt="">
+      <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/${id}.png" alt="Pokemon">
   </div>
   <div class="info">
      <span class="number">#${id}</span>
@@ -86,4 +93,3 @@ const pokemonInnerHtml = `
   
 }
 
-fetchPokemons()
