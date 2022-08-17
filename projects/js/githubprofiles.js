@@ -9,9 +9,10 @@ async function getUser(username){
   const {data}= await axios(APIURL + username)
 
   createUserCard(data)
- }catch(err) {
-
-  console.log(err)
+ } catch(err) {
+  if(err.response.status == 404){
+    createErrorCard('There is no such user')
+  }
  }
 
 }
@@ -41,7 +42,15 @@ function createUserCard(user) {
 main.innerHTML = cardHTML;
 }
 
+function createErrorCard(msg){
+ const cardHTML = `
+ <div class="card">
+   <h1>${msg}</h1>
+ </div>
+`
 
+main.innerHTML = cardHTML
+}
 
 form.addEventListener('submit', (e) =>{
  e.preventDefault()
