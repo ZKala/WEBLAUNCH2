@@ -10,7 +10,11 @@ addpokemon.addEventListener('click', () => fetchPokemons())
 
 const poke_container = document.getElementById('poke-container');
 
-const pokemon_count = 150;
+const pokemon_count = prompt("How many pokemon do you want to load?");
+
+if(pokemon_count <= 0){
+   alert('You entered an invalid amount');
+}
 
 // pokemon types colors
 const colors = {
