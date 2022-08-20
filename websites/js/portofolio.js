@@ -28,3 +28,5 @@ toggle.addEventListener('click', (e) =>{
 
 })
 // end of darkmode
+
+// send contact form request

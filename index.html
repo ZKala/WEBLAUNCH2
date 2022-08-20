@@ -185,11 +185,11 @@
 <!-- section 4 contact -->
 <section class="section-4">
   <h1 class="section-heading section-4-heading">Contact Me</h1>
-  <form class="contact-form center">
-    <input type="text" placeholder="Name">
-    <input type="email" placeholder="Email">
-    <textarea placeholder="Message"></textarea>
-    <input type="submit" value="submit" class="contact-form-btn">
+  <form action="https://formsubmit.co/aleisterbusico3@gmail.com" method="POST" class="contact-form center">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="Email" placeholder="Email" required>
+    <input type="Message" name="Message" placeholder="Message" id="message" required></input>
+    <button type="submit" class="submit-btn">Send</button>
   </form>
 </section>
 <!-- end of section 4 -->
@@ -219,5 +219,7 @@
 </div>
 
   <script src="./websites/js/portofolio.js"></script>
-</body>
+
+
+  </body>
 </html>
