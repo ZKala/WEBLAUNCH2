@@ -503,9 +503,6 @@ html{
  .section-4{
   height: 80vh;
  }
- .project{
-  width: 50vh;
- }
 }
 
 @media(max-width:800px){
@@ -568,8 +565,5 @@ html{
   text-align: center;
   width: 40rem;
  }
- .project{
-  width: 50vh;
-}
 }
 /* end of responsive display */

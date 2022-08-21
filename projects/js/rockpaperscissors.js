@@ -9,6 +9,8 @@ const computerScore = document.getElementById('score-computer');
 const drawScore = document.getElementById('draws');
 const totalWins = document.getElementById('wins');
 const totalLosses = document.getElementById('gamesLost');
+const stopMusic = document.getElementById('stop-music');
+const playMusic = document.getElementById('play-music');
 
 let choice
 let compchoice
@@ -105,4 +107,5 @@ function getResults(){
 window.addEventListener("click", () => {
   document.getElementById('song').play();
   })
+
 // end of play song

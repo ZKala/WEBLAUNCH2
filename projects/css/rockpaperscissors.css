@@ -8,10 +8,11 @@
 
 html{
  font-size: 62.5%;
+
 }
 /* container */
 .container {
- height: 100vw;
+ height: 100vh;
  width: 100%;
  display: flex;
  box-sizing: border-box;
@@ -55,11 +56,26 @@ html{
  border: 2px solid #0095ff;
 }
 
+/* screen sizes */
+@media(max-width: 992px) {
+ html{
+  font-size: 55%;
+ }
+}
+
 @media(max-width: 768px) {
  html{
   font-size: 45%;
  }
 }
+
+@media(max-width: 500px) {
+ html{
+  font-size: 35%;
+ }
+}
+
+/* end of screen sizes */
 
 /* scores */
 .score{
@@ -98,3 +114,5 @@ html{
 }
 
 /* end of back home */
+
+
