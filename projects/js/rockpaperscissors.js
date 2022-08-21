@@ -103,6 +103,6 @@ function getResults(){
 
 // play song
 window.addEventListener("click", () => {
-  document.getElementById('soang').play();
+  document.getElementById('song').play();
   })
 // end of play song
