@@ -6,6 +6,7 @@ const resultDisplay = document.getElementById('result');
 const possibleChoices = document.querySelectorAll('button');
 const playerScore = document.getElementById('score-user');
 const computerScore = document.getElementById('score-computer');
+const drawScore = document.getElementById('draws');
 
 let choice
 let compchoice
@@ -15,7 +16,7 @@ let results
 // scores
 var userScore = 0
 var compScore = 0
-
+var draws = 0
 
 // scores
 
@@ -44,6 +45,7 @@ computerChoiceDisplay.innerHTML = compchoice;
 function getResults(){
  if(compchoice === choice){
   results = 'Draw'
+  draws++;
  }
  else if(compchoice === 'rock' && choice === 'paper'){
   results = 'you win'
@@ -74,10 +76,12 @@ function getResults(){
  resultDisplay.innerHTML = results
  playerScore.innerHTML = userScore
  computerScore.innerHTML = compScore
+ drawScore.innerHTML = draws
 
  if(compScore == 5 || userScore == 5){
   alert('Great Game! Click Ok to play again')
   compScore = 0
   userScore = 0
+  draws = 0
  }
 }
