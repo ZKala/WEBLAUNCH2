@@ -7,6 +7,8 @@ const possibleChoices = document.querySelectorAll('button');
 const playerScore = document.getElementById('score-user');
 const computerScore = document.getElementById('score-computer');
 const drawScore = document.getElementById('draws');
+const totalWins = document.getElementById('wins');
+const totalLosses = document.getElementById('gamesLost');
 
 let choice
 let compchoice
@@ -17,6 +19,8 @@ let results
 var userScore = 0
 var compScore = 0
 var draws = 0
+var winScore = 0
+var lostScore = 0
 
 // scores
 
@@ -72,16 +76,33 @@ function getResults(){
   compScore++;
  }
  
- 
+//  insertions
  resultDisplay.innerHTML = results
  playerScore.innerHTML = userScore
  computerScore.innerHTML = compScore
  drawScore.innerHTML = draws
+ totalWins.innerHTML = winScore
+ totalLosses.innerHTML = lostScore
+// insertions
 
- if(compScore == 5 || userScore == 5){
+ if(userScore == 5){
   alert('Great Game! Click Ok to play again')
   compScore = 0
   userScore = 0
   draws = 0
+  winScore++
+ }else if(compScore == 5){
+  alert('You Lose. Game over. Click Ok to play again')
+  compScore = 0
+  userScore = 0
+  draws = 0
+  lostScore++
  }
+ 
 }
+
+// play song
+window.addEventListener("click", () => {
+  document.getElementById('soang').play();
+  })
+// end of play song

@@ -374,12 +374,23 @@ html{
 #pokedex{
   font-family: "pokeFont";
   color: rgb(138, 118, 3);
-  top: 0;
+  transform: translateY(-1rem);
+  margin-bottom: -2rem;
 }
 
+
 #pokedex-btn{
-  transform: translateY(3rem);
+  transform: translateY(2rem);
 }
+
+.difficulty{
+  font-size: 1.5rem;
+}
+
+#diff{
+  transform: translateY(2rem);
+}
+
 /* end of section 3 */
 
 /* section 4 */
