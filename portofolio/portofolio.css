@@ -391,6 +391,10 @@ html{
   transform: translateY(2rem);
 }
 
+#newyearcountdown{
+  font-size: 2.5rem;
+}
+
 /* end of section 3 */
 
 /* section 4 */
