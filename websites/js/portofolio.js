@@ -1,3 +1,16 @@
+// loading animation
+const loading = document.getElementById('loading');
+
+// show spinner countdown
+setTimeout(() => {
+   loading.remove();
+   countdown.style.display = 'flex';
+  }, 1000);
+  
+
+// end of loading animation
+
+
 const navbar = document.querySelector(".navbar");
 
 const navbarOffsetTop = navbar.offsetTop;
