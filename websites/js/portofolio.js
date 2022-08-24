@@ -5,7 +5,7 @@ const loading = document.getElementById('loading');
 setTimeout(() => {
    loading.remove();
    countdown.style.display = 'flex';
-  }, 1000);
+  }, 2000);
   
 
 // end of loading animation
