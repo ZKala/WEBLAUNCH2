@@ -1,0 +1,60 @@
+
+*{
+ margin: 0;
+ padding: 0;
+ /* position: relative; */
+ background: rgb(231, 229, 229);
+}
+
+h1{
+ text-align: center;
+ margin-top: 5rem;
+}
+
+.message{
+ text-align: center;
+ color: rgb(95, 92, 92);
+}
+
+.gameboard{
+ height: 350px;
+ width: 350px;
+ border: 2px solid black;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ border-radius: 10%;
+ overflow: hidden;
+}
+
+.box{
+ height: 50%;
+ width: 50%;
+ text-align: center;
+ display: inline-block;
+}
+
+.active{
+ border: 1px solid red;
+ color: red;
+}
+
+button{
+ font-size: 2rem;
+ border-radius: 2rem;
+ padding: 1rem 2rem;
+ background: white;
+ font-weight: bold;
+ top: 85%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ position: absolute;
+}
+
+button:hover{
+ background: black;
+ color: white;
+ text-transform: uppercase;
+ cursor: pointer;
+}

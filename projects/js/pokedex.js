@@ -2,7 +2,6 @@
 
 const addpokemon =  document.getElementById('addpokemon')
 
-
 addpokemon.addEventListener('click', () => fetchPokemons())
 
 
