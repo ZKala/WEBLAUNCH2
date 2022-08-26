@@ -13,7 +13,7 @@ const title = document.getElementById('title');
 const cover = document.getElementById('cover');
 
 //song titles
-const songs = ['armaniwhite','despair', 'milkshake(spedup)'];
+const songs = ['armaniwhite','despair', 'milkshake(spedup)', 'emptydreams','CyparissRedmist'];
 
 //keep track of song
 let songIndex = 2;
