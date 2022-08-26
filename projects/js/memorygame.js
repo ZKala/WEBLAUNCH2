@@ -3,6 +3,8 @@
  const gameboard = document.querySelector(".gameboard");
  const button = document.querySelector("button");
  const gameColors = ["red", "green", "blue", "yellow"]
+ const score = document.getElementById("score");
+ const highScore = document.getElementById("highscore");
 
  let gameClicks = [];
  let userClicks = [];
@@ -34,21 +36,23 @@ function messenger(mes){
   runSequence(playNum);
 }
 
-function runSequence(){
+function runSequence(num){
  let squares = document.querySelectorAll(".box");
- playNum--;
- if(playNum<0){
+ num--;
+ if(num < 0){
    inPlay = true;
-   return
+   return;
+
  }
- let randomNum = Math.floor(Math.random()* gameColors.length)
+ let randomNum = Math.floor(Math.random() * gameColors.length)
  gameClicks.push(gameColors[randomNum])
  squares[randomNum].style.opacity = "1";
  setTimeout(function(){
-  squares[randomNum].style.opacity = "0.5";
-  setTimeout(function(){
-    runSequence(playNum);
-  })}, 500)
+    squares[randomNum].style.opacity = "0.5";
+    setTimeout(function(){
+      runSequence(num);
+    },100)
+  }, 500)
 }
 
  function setup() {
@@ -72,24 +76,24 @@ function runSequence(){
    el.style.opacity = "1";
    setTimeout(function(){
     el.style.opacity = "0.5";
-   }, 500)
-   if(userClicks.length === gameClicks.length){
+   }, 500);
+   if(userClicks.length == gameClicks.length){
     inPlay = false;
-    endGame()
+    endGame();
   }
-  console.log(userClicks)
  }
 }
 
 function endGame() {
- console.log("Game Over!")
  button.disabled = false;
  button.style.opacity = 1;
+ messenger("Game made by ItsMeAlei!")
  if(userClicks.toString() == gameClicks.toString()){
   playNum++
-  console.log("Correct")
+  messenger("Correct! New Level= " + playNum)
  }else{
-  console.log("Incorrect")
+  playNum--
+  messenger("Incorrect! New Level= " + playNum)
  }
 }
 
