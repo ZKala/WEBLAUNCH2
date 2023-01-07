@@ -40,5 +40,20 @@
  </div>
   
  <script src="musicplayer.js"></script>
+ <!-- HTML for the volume control -->
+<label for="volume">Volume:</label>
+<input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+
+<!-- JavaScript to control the volume -->
+<script>
+  // Get the audio element and the volume control
+  var audio = document.getElementById('music');
+  var volume = document.getElementById('volume');
+
+  // Update the audio volume when the volume control is changed
+  volume.addEventListener('input', function() {
+    audio.volume = this.value;
+  });
+</script>
 </body>
 </html>
